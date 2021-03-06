@@ -1,0 +1,47 @@
+<div class = 'row m-0 w-100'>
+  <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+    <h5>You are logged in</h5>
+    </div>
+  <div class = 'col-md-4 offset-4 mt-5'>
+  <h4>Add new User</h4>
+  <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "EmpId" placeholder = "Employee ID" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "EmpName" placeholder = "Name" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "password" name = "Password" placeholder = "Password" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "Department" placeholder = "Department" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "BankPartner" placeholder = "Bank Partner" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "State" placeholder = "State" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "Branch" placeholder = "Branch" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "Designation" placeholder = "Designation" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "email" name = "Email" placeholder = "Email" ngModel>
+  </div>
+  <div class = 'form-group'>
+  <input class = 'form-control' type = "text" name = "Mobile" placeholder = "Mobile No." ngModel>
+  </div>
+  <div class = 'form-group'>
+    <input class = 'form-control' type = "text" name = "UserGroup" placeholder = "UserGroup" ngModel>
+    </div>
+  <input class= 'btn btn-outline-info' type = "submit" value = "Register">
+  </form>
+  </div>
+  <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isUserAdded'>
+  <h5>User Added</h5>
+  </div>
+  </div>
